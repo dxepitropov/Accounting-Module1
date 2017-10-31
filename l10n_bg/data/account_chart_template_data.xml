@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<!-- Transfer account ofr chart template -->
+    <record id="3590080" model="account.account.template">
+        <field name="name">Други разчети с персонала и съдружниците | Other payables and receivables to/from personnel and partners</field>
+        <field name="code">429000</field>
+        <field name="reconcile" eval="True"/>
+        <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    </record>
+        <!-- Chart template -->
+        <record id="l10nbg_chart_template" model="account.chart.template">
+        <field name="name">Национален Счетоводен Сметкоплан | National Chart of Accounts for Bulgaria</field>
+			  <field name="code_digits">6</field>
+			  <field name="bank_account_code_prefix">503</field>
+        <field name="cash_account_code_prefix">501</field>
+        <field name="transfer_account_id" ref="3590080"/>
+        <field name="currency_id" ref="base.BGN"/>
+    </record>
+		<record id="3590080" model="account.account.template">
+        <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    </record>
+</odoo>

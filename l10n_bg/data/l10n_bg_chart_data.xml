@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="3590002" model="account.account.template">
+    <field name="code">602000</field>
+    <field name="name">Разходи за външни услуги | Expenses for external services</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590003" model="account.account.template">
+    <field name="code">401020</field>
+    <field name="name">Задължения към доставчици | Payables to suppliers</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="True" name="reconcile"/>
+</record>
+<record id="3590004" model="account.account.template">
+    <field name="code">453010</field>
+    <field name="name">Начислен данък върху добавената стойност за покупките | Value added tax charged on purchases</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590005" model="account.account.template">
+    <field name="code">411020</field>
+    <field name="name">Вземания от клиенти | Receivables from customers</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_receivable"/>
+    <field eval="True" name="reconcile"/>
+</record>
+<record id="3590006" model="account.account.template">
+    <field name="code">703010</field>
+    <field name="name">Приходи от продажби на услуги | Revenue from sales of services</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590007" model="account.account.template">
+    <field name="code">704000</field>
+    <field name="name">Приходи от наеми | Rental income</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590008" model="account.account.template">
+    <field name="code">705000</field>
+    <field name="name">Приходи от продажби на дълготрайни активи | Income from sales of fixed assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590009" model="account.account.template">
+    <field name="code">706000</field>
+    <field name="name">Приходи от продажба на суровини/материали | Income from sale of raw materials/materials</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590010" model="account.account.template">
+    <field name="code">707000</field>
+    <field name="name">Приходи от последващи оценка на активи | Income from re-evaluation of assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_other_income"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590011" model="account.account.template">
+    <field name="code">708000</field>
+    <field name="name">Приходи от финансирания (субсидии и грантове) | Income from financing (subsidies and grants)</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_other_income"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590012" model="account.account.template">
+    <field name="code">709000</field>
+    <field name="name">Други приходи от дейността  | Other income from operations</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590013" model="account.account.template">
+    <field name="code">503020</field>
+    <field name="name">Разплащателна сметки в левове | Current account in BGN</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590014" model="account.account.template">
+    <field name="code">461000</field>
+    <field name="name">Разчети за задължително социално осигуряване | Payables for compulsory social security</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590015" model="account.account.template">
+    <field name="code">461030</field>
+    <field name="name">Пенсионен фонд | Pension fund </field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590016" model="account.account.template">
+    <field name="code">461020</field>
+    <field name="name">Здравна осигуровка | Health insurance</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590017" model="account.account.template">
+    <field name="code">461010</field>
+    <field name="name">Социално осигуряванe | Social security insurance</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590018" model="account.account.template">
+    <field name="code">454000</field>
+    <field name="name">Разчети за данъци върху доходи на физически лица | Income Taxes of Individuals</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590019" model="account.account.template">
+    <field name="code">611000</field>
+    <field name="name">Разходи за основна дейност | Expenses for main operations</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590020" model="account.account.template">
+    <field name="code">611010</field>
+    <field name="name">Банкови такси | Bank fees</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590021" model="account.account.template">
+    <field name="code">504000</field>
+    <field name="name">Разплащателна сметка във валута | Current account in foreign currency</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590022" model="account.account.template">
+    <field name="code">422010</field>
+    <field name="name">Разчети с подотчетни лица | Payables and receivables with petty cash advances</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field eval="True" name="reconcile"/>
+</record>
+<record id="3590023" model="account.account.template">
+    <field name="code">604000</field>
+    <field name="name">Разходи за заплати (възнаграждения) | Expenses for salaries and wages</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590024" model="account.account.template">
+    <field name="code">605000</field>
+    <field name="name">Разходи за осигуровки | Insurance costs</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590025" model="account.account.template">
+    <field name="code">421000</field>
+    <field name="name">Задължения към персонал | Payables to personnel</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field eval="True" name="reconcile"/>
+</record>
+<record id="3590026" model="account.account.template">
+    <field name="code">111000</field>
+    <field name="name">Общи резерви | General reserves</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590027" model="account.account.template">
+    <field name="code">119000</field>
+    <field name="name">Други резерви | Other reserves</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590028" model="account.account.template">
+    <field name="code">121000</field>
+    <field name="name">Непокрита загуба от минали години | Prior years retained loss</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590029" model="account.account.template">
+    <field name="code">122000</field>
+    <field name="name">Неразпределена печелба от минали години | Undistributed profit from prior years</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590030" model="account.account.template">
+    <field name="code">123000</field>
+    <field name="name">Печалби и загуби от текущата година | Profits and losses from current year</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590031" model="account.account.template">
+    <field name="code">159000</field>
+    <field name="name">Други заеми и дългове | Other loans and debts</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590032" model="account.account.template">
+    <field name="code">201000</field>
+    <field name="name">Земи (терени) | Lands (terrains)</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590033" model="account.account.template">
+    <field name="code">203000</field>
+    <field name="name">Сгради и конструкции | Buildings and constructions</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590034" model="account.account.template">
+    <field name="code">204000</field>
+    <field name="name">Машини и оборудване | Machinery and equipment</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590035" model="account.account.template">
+    <field name="code">205000</field>
+    <field name="name">Съоражения | Equipment</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590036" model="account.account.template">
+    <field name="code">206000</field>
+    <field name="name">Транспортни средства | Vehicles</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590037" model="account.account.template">
+    <field name="code">207000</field>
+    <field name="name">Компютърно оборудване | Computer equipment</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590038" model="account.account.template">
+    <field name="code">208000</field>
+    <field name="name">Обзавеждане и трайни активи | Furnishing and durable assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590039" model="account.account.template">
+    <field name="code">209000</field>
+    <field name="name">Други дълготрайни материални активи | Other tangible fixed assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590040" model="account.account.template">
+    <field name="code">219000</field>
+    <field name="name">Други дълготрайни нематериални активи | Other fixed intangible assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590041" model="account.account.template">
+    <field name="code">225000</field>
+    <field name="name">Финансови активи,  държани до настъпването на падежа | Financial assets, held to maturity</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590042" model="account.account.template">
+    <field name="code">229000</field>
+    <field name="name">Други дългосрочни финансови активи | Other long-term financial assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590043" model="account.account.template">
+    <field name="code">241000</field>
+    <field name="name">Амортизация на ДМА | Depreciation of tangible fixed assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590044" model="account.account.template">
+    <field name="code">242000</field>
+    <field name="name">Амортизация на дълготрайни нематериални активи | Amortization of intangible fixed assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590045" model="account.account.template">
+    <field name="code">251000</field>
+    <field name="name">Провизии за покриване на рискови активи | Provisions for covering of risk assets</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590046" model="account.account.template">
+    <field name="code">259000</field>
+    <field name="name">Други провизии | Other provisions</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590047" model="account.account.template">
+    <field name="code">269000</field>
+    <field name="name">Други дългосрочни вземания и заеми | Other long-term receivables and loans</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590048" model="account.account.template">
+    <field name="code">271000</field>
+    <field name="name">Гори | Forests</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590049" model="account.account.template">
+    <field name="code">272000</field>
+    <field name="name">Трайни насаждения - плододоващи | Perennial plants – fructiferous</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590050" model="account.account.template">
+    <field name="code">273000</field>
+    <field name="name">Трайни насаждения - неплододаващи | Perennial plants – non-fructiferous</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590051" model="account.account.template">
+    <field name="code">274000</field>
+    <field name="name">Животни в основни стада | Animals in basic herds</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590052" model="account.account.template">
+    <field name="code">301000</field>
+    <field name="name">Доставки | Purchases</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590053" model="account.account.template">
+    <field name="code">302000</field>
+    <field name="name">Материали | Materials</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590054" model="account.account.template">
+    <field name="code">303000</field>
+    <field name="name">Продукция | Production</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590055" model="account.account.template">
+    <field name="code">304000</field>
+    <field name="name">Стоки | Goods</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590056" model="account.account.template">
+    <field name="code">412000</field>
+    <field name="name">Клиенти по аванси | Advances to customers</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590057" model="account.account.template">
+    <field name="code">422000</field>
+    <field name="name">Подотчетни лица | Petty cash advances</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field eval="True" name="reconcile"/>
+</record>
+<record id="3590058" model="account.account.template">
+    <field name="code">451000</field>
+    <field name="name">Разчети с общините | Payables to municipalities</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590059" model="account.account.template">
+    <field name="code">452000</field>
+    <field name="name">Разчети за данъци върху печалбата | Tax on profit payables</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590060" model="account.account.template">
+    <field name="code">469000</field>
+    <field name="name">Други разчети с осигурителни  | Other payables to insurers</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590061" model="account.account.template">
+    <field name="code">497000</field>
+    <field name="name">Провизии | Provisions</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590062" model="account.account.template">
+    <field name="code">498000</field>
+    <field name="name">Други дебитори | Other debtors</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field eval="True" name="reconcile"/>
+</record>
+<record id="3590063" model="account.account.template">
+    <field name="code">499000</field>
+    <field name="name">Други кредитори | Other creditors</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_receivable"/>
+    <field eval="True" name="reconcile"/>
+</record>
+<record id="3590064" model="account.account.template">
+    <field name="code">501000</field>
+    <field name="name">Каса във валута | Cash in hand in foreign currency</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590065" model="account.account.template">
+    <field name="code">502000</field>
+    <field name="name">Каса в левове | Cash in hand in BGN</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590066" model="account.account.template">
+    <field name="code">601000</field>
+    <field name="name">Разходи за материали | Costs of materials</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590067" model="account.account.template">
+    <field name="code">603000</field>
+    <field name="name">Разходи за амортизация | Depreciation costs</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590068" model="account.account.template">
+    <field name="code">606000</field>
+    <field name="name">Разходи за данъци, такси и други подобни плащания | Expenses for taxes, fees and other similar payments</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590069" model="account.account.template">
+    <field name="code">607000</field>
+    <field name="name">Разходи за провизии | Expenses for provisions</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590070" model="account.account.template">
+    <field name="code">609000</field>
+    <field name="name">Други разходи | Other expenses</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590071" model="account.account.template">
+    <field name="code">614000</field>
+    <field name="name">Административни разходи | Administrative costs</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590072" model="account.account.template">
+    <field name="code">629000</field>
+    <field name="name">Други финансови разходи | Other financial costs</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590073" model="account.account.template">
+    <field name="code">691000</field>
+    <field name="name">Извънредни разходи | Extraordinary expenses</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590075" model="account.account.template">
+    <field name="code">719000</field>
+    <field name="name">Други приходи | Other income</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_other_income"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590076" model="account.account.template">
+    <field name="code">729000</field>
+    <field name="name">Други финансови приходи | Other financial income</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_other_income"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590077" model="account.account.template">
+    <field name="code">101000</field>
+    <field name="name">Основен капитал,  изискващ регистрация | Capital share, requiring registration</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_equity"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590078" model="account.account.template">
+    <field name="code">102000</field>
+    <field name="name">Основен капитал  неизискващ регистрация | Capital share, non-requiring registration</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_equity"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590079" model="account.account.template">
+    <field name="code">105000</field>
+    <field name="name">Капитал на предприятия с нестопанска дейност | Equity capital of non-for-profit enterprises</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_equity"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590081" model="account.account.template">
+    <field name="code">624000</field>
+    <field name="name">Разходи от последващи оценки на финансови активи и инструменти | Expenses arising from re-evaluation of financial assets and instruments</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590082" model="account.account.template">
+    <field name="code">625000</field>
+    <field name="name">Разходи по валутни операции | Losses arising as a result of dealing in foreign currencies</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590083" model="account.account.template">
+    <field name="code">724000</field>
+    <field name="name">Приходи от последващи оценки на финансови активи и инструменти | Income from re-evaluation of financial assets and instruments</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_other_income"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590084" model="account.account.template">
+    <field name="code">725000</field>
+    <field name="name">Приходи от валутни операции | Gains arising as a result of dealings in foreign currencies</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_other_income"/>
+    <field eval="False" name="reconcile"/>
+</record>
+<record id="3590085" model="account.account.template">
+    <field name="code">454020</field>
+    <field name="name">Начислен данък върху добавената стойност за продажбите | Charged value added tax on sales</field>
+    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field eval="False" name="reconcile"/>
+</record>
+	<!-- Update CoA with newly created accounts -->
+	<record id="l10nbg_chart_template" model="account.chart.template">
+		<field name="code_digits">6</field>
+		<field name="bank_account_code_prefix">503</field>
+		<field name="cash_account_code_prefix">501</field>
+		<field name="transfer_account_id" ref="3590080"/>
+		<field name="currency_id" ref="base.BGN"/>
+		<field name="property_account_receivable_id" ref="3590005"/>
+		<field name="property_account_payable_id" ref="3590003"/>
+		<field name="property_account_expense_categ_id" ref="3590019"/>
+		<field name="property_account_income_categ_id" ref="3590012"/>
+		<field name="expense_currency_exchange_account_id" ref="3590072"/>
+		<field name="income_currency_exchange_account_id" ref="3590072"/>
+		<field name="property_stock_valuation_account_id" ref="3590072"/>
+		<field name="property_stock_account_output_categ_id" ref="3590055"/>
+		<field name="property_stock_account_input_categ_id" ref="3590055"/>
+		<field name="property_account_income_id" ref="3590012"/>
+		<field name="property_account_expense_id" ref="3590019"/>
+	</record>
+</odoo>

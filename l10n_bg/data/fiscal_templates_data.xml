@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Fiscal Position Templates -->
+    <record id="359901" model="account.fiscal.position.template">
+            <field name="name">Национален режим | National regime</field>
+            <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    </record>
+
+    <record id="359902" model="account.fiscal.position.template">
+            <field name="name">Вътреобщностен режим | Intra-Community regime</field>
+            <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    </record>
+
+    <record id="359903" model="account.fiscal.position.template">
+            <field name="name">Режим извън общностна доставка | Regime Outside-EU supplies</field>
+            <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    </record>
+    <record id="359904" model="account.fiscal.position.template">
+            <field name="name">Не подлежи на облагане с ДДС | Not subject to VAT</field>
+            <field name="chart_template_id" ref="l10nbg_chart_template"/>
+    </record>
+</odoo>

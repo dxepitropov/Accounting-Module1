@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="BG_VAT_1" model="account.tax.template">
+	    <field name="description">20% ДДС продажби | 20% VAT sales</field>
+	    <field name="name">ДДС продажби на територията на страната 20% | VAT sales incurred within the national territory 20%</field>
+	    <field name="refund_account_id" ref="3590085"/>
+	    <field name="account_id" ref="3590085"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">20</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">sale</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">5</field>
+	</record>
+	<record id="BG_VAT_2" model="account.tax.template">
+	    <field name="description">0% ВОД | 0% Intra-Community supplies</field>
+	    <field name="name">Вътреобщностни доставки - ВОД 0% | Intra-Community supplies 0%</field>
+	    <field name="refund_account_id" ref="3590085"/>
+	    <field name="account_id" ref="3590085"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">0</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">sale</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">10</field>
+	</record>
+	<record id="BG_VAT_3" model="account.tax.template">
+	    <field name="description">0% Износ извън ЕС | 0% Export outside EU</field>
+	    <field name="name">Износ към държави извън ЕС | Export to countries outside EU 0%</field>
+	    <field name="refund_account_id" ref="3590085"/>
+	    <field name="account_id" ref="3590085"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">0</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">sale</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">10</field>
+	</record>
+	<record id="BG_VAT_4" model="account.tax.template">
+	    <field name="description">9% Туристически услуги | 9% Tourist Services</field>
+	    <field name="name">Туристически услуги 9% | Tourist Services 9%</field>
+	    <field name="refund_account_id" ref="3590085"/>
+	    <field name="account_id" ref="3590085"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">9</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">sale</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">10</field>
+	</record>
+	<record id="BG_VAT_5" model="account.tax.template">
+	    <field name="description">0% ВОП | 0% Intra-Community acquisitions</field>
+	    <field name="name">Вътреобщностното придобиване - ВОП 0% | Intra-Community acquisitions 0%</field>
+	    <field name="refund_account_id" ref="3590004"/>
+	    <field name="account_id" ref="3590004"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">0</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">purchase</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">10</field>
+	</record>
+	<record id="BG_VAT_6" model="account.tax.template">
+	    <field name="description">0% Сделки без право на ДК | 0% Supplies without tax credit deduction right</field>
+	    <field name="name">Необлагаеми сделки и без право на ДК 0% | Non-taxable supplies and not entitled to tax credit deduction 0%</field>
+	    <field name="refund_account_id" ref="3590004"/>
+	    <field name="account_id" ref="3590004"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">0</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">purchase</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">10</field>
+	</record>
+	<record id="BG_VAT_7" model="account.tax.template">
+	    <field name="description">20% ДДС покупки | 20% VAT purchases</field>
+	    <field name="name">ДДС покупки на пълен ДК 20% | VAT purchases entitled to full tax credit deduction 20%</field>
+	    <field name="refund_account_id" ref="3590004"/>
+	    <field name="account_id" ref="3590004"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">20</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">purchase</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">5</field>
+	</record>
+	<record id="BG_VAT_8" model="account.tax.template">
+	    <field name="description">0% Внос извън ЕС | 0% Import outside EU</field>
+	    <field name="name">Внос от държави извън ЕС 0% | Import from countries outside EU 0%</field>
+	    <field name="refund_account_id" ref="3590004"/>
+	    <field name="account_id" ref="3590004"/>
+	    <field name="price_include" eval="0"/>
+	    <field name="amount">0</field>
+	    <field name="amount_type">percent</field>
+	    <field name="type_tax_use">purchase</field>
+	    <field name="chart_template_id" ref="l10nbg_chart_template"/>
+        <field name="sequence">10</field>
+	</record>
+</odoo>
